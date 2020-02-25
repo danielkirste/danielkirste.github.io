@@ -6,16 +6,16 @@
 
 body {
     margin: 0;
-    background: #ffffff;
+    background: #1e0e31;
     color: #1e0e31;
     font-family: 'Lobster Two', Arial;
 }
 
-header {
+.landing-section {
     position: relative;
 }
 
-header,
+.landing-section,
 .schedule {
     margin: 0 auto;
     min-height: 100vh;
@@ -68,6 +68,10 @@ h2 {
 section {
     padding: 1rem 1rem;
     position: relative;
+}
+
+.section--w {
+    background: #ffffff;
 }
 
 iframe {
@@ -305,7 +309,6 @@ svg {
 .parallax-item {
     transform: translateY(calc(var(--y) * var(--item-speed)));
 }
-
 
 .arrow {
     width: 30px;
