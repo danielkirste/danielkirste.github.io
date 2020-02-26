@@ -1,36 +1,36 @@
-// countdown
+/** countdown */
 const thisDate = new Date();
-const thisOffset = thisDate.getTimezoneOffset() / 60;
+const thisOffset = thisDate.getTimezoneOffset();
 
-const targetDate = new Date("2020-05-08");
-const targetOffset = targetDate.getTimezoneOffset() / 60;
+const targetDate = new Date("2020-05-08 14:00:00");
+const targetOffset = targetDate.getTimezoneOffset();
 
-const timeZoneOffset = targetOffset - thisOffset;
+const offset = targetOffset + -thisOffset;
+const offsetInMS = offset * 60 * 1000;
 
-const numDays = document.querySelector(".countdown__item--days");
-const numHours = document.querySelector(".countdown__item--hours");
-const numMinutes = document.querySelector(".countdown__item--minutes");
-const numSeconds = document.querySelector(".countdown__item--seconds");
+const countdownDays = document.querySelector(".countdown__item--days");
+const countdownHours = document.querySelector(".countdown__item--hours");
+const countdownMinutes = document.querySelector(".countdown__item--minutes");
+const countdownSeconds = document.querySelector(".countdown__item--seconds");
 
 const countdownFun = () => {
-    const difference = +targetDate - +new Date();
-    // + before new Date is shorthand to cast the object as an Int
+    const difference = +targetDate - +new Date() + -offsetInMS;
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24 + timeZoneOffset);
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24 );
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
     const seconds = Math.floor((difference / 1000) % 60);
 
-    numDays.innerText = days;
-    numHours.innerText = hours;
-    numMinutes.innerText = minutes;
-    numSeconds.innerText = seconds;
+    countdownDays.innerText = days;
+    countdownHours.innerText = hours;
+    countdownMinutes.innerText = minutes;
+    countdownSeconds.innerText = seconds;
 }
 
 countdownFun();
 setInterval(countdownFun, 1000);
 
-// arrow
+/** arrow */ 
 const arrow = document.querySelector(".arrow");
 
 let hideArrow = () => {
@@ -41,7 +41,7 @@ let hideArrow = () => {
 
 window.addEventListener('scroll', hideArrow);
 
-// parallax
+/** parallax */ 
 const parallax = () => {
     let parallax = document.querySelector('.parallax');
     parallax.style.setProperty('--y', `${window.scrollY}px`);
