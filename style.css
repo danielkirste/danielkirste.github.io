@@ -138,10 +138,12 @@ address {
 
 .elevator__item--tanzen {
     background: #1ce3e3;
+    color: #1e0e31;
 }
 
 .elevator__item--lachen {
     background: #ffe44e;
+    color: #1e0e31;
 }
 
 .card {
