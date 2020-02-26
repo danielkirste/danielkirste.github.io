@@ -7,10 +7,10 @@ const targetOffset = targetDate.getTimezoneOffset() / 60;
 
 const timeZoneOffset = targetOffset - thisOffset;
 
-const numDays = document.querySelector(".countdown-item--days");
-const numHours = document.querySelector(".countdown-item--hours");
-const numMinutes = document.querySelector(".countdown-item--minutes");
-const numSeconds = document.querySelector(".countdown-item--seconds");
+const numDays = document.querySelector(".countdown__item--days");
+const numHours = document.querySelector(".countdown__item--hours");
+const numMinutes = document.querySelector(".countdown__item--minutes");
+const numSeconds = document.querySelector(".countdown__item--seconds");
 
 const countdownFun = () => {
     const difference = +targetDate - +new Date();
@@ -56,5 +56,5 @@ const parallaxObserver = new IntersectionObserver(entries => {
     }
 });
 
-const paralaxReverence = document.querySelector('.parallax-reference');
+const paralaxReverence = document.querySelector('.hero');
 parallaxObserver.observe(paralaxReverence);
