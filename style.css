@@ -56,6 +56,10 @@ h1, h2 {
     color: #ffffff;
 }
 
+.section--purple a {
+    color: #ffffff;
+}
+
 .schedule svg {
     padding: 2rem;
 }
@@ -127,6 +131,15 @@ address {
 .elevator__item--lachen {
     background: #ffe44e;
     color: #1e0e31;
+}
+
+.map {
+    display: block;
+    width: 100%;
+}
+
+.map img {
+    width: 100%;
 }
 
 .gallery {
