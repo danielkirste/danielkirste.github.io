@@ -38,6 +38,9 @@ h1, h2 {
     text-align: center;
 }
 
+address {
+    margin-bottom: 1rem;
+}
 
 .section--white {
     background: #ffffff;
