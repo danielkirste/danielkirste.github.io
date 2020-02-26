@@ -10,8 +10,21 @@
 </head>
 <body>
     <main>
-      <section class="parallax-reference landing-section">
-        <div class="hero-container bottom-wave bottom-wave--white">
+      <section class="hero">
+        <header class="hero__header">
+          <h1 class="shadow-text" data-shadowline="Wir sagen Ja">
+            Wir sagen Ja
+          </h1>
+          <h2>Johanna &amp; Daniel</h2>
+        </header>
+        <div class="countdown parallax">
+          <div class="countdown__item countdown__item--days    parallax__item" data-abbr="d"></div>
+          <div class="countdown__item countdown__item--hours   parallax__item" data-abbr="h"></div>
+          <div class="countdown__item countdown__item--minutes parallax__item" data-abbr="m"></div>
+          <div class="countdown__item countdown__item--seconds parallax__item" data-abbr="s"></div>
+        </div>
+        <div class="arrow arrowanim"></div>
+        <div class="hero__img-container bottom-wave bottom-wave--white">
           <picture>
             <source media="(max-width: 800px)"
                     srcset="img/hero-800w.webp"
@@ -31,32 +44,6 @@
               alt="Wir heiraten">
           </picture>
         </div>
-        <h2>
-            <span class="name" data-shadowline="Johanna">
-                Johanna
-            </span>
-            &amp;
-            <span class="name" data-shadowline="Daniel">
-                Daniel
-            </span>
-        </h2>
-        <h1>
-          <svg viewBox="0 0 500 150">
-            <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-            <text>
-              <textPath xlink:href="#curve">
-                Wir sagen "Ja"
-              </textPath>
-            </text>
-          </svg>
-        </h1>
-        <div class="countdown parallax">
-          <div class="countdown-item countdown-item--days parallax-item" data-abbr="d"></div>
-          <div class="countdown-item countdown-item--hours parallax-item" data-abbr="h"></div>
-          <div class="countdown-item countdown-item--minutes parallax-item" data-abbr="m"></div>
-          <div class="countdown-item countdown-item--seconds parallax-item" data-abbr="s"></div>
-        </div>
-        <div class="arrow arrowanim"></div>
       </section>
       <section class="section--white">
         <div class="column-layout">
@@ -104,7 +91,7 @@
           </div>
           <div class="column-layout">
             <p>
-               Um Euch abends den Weg aufs Tanzpakett zu erleichtern,
+               Um Euch abends den Weg aufs Tanzparkett zu erleichtern,
                dürft Ihr uns auch gerne ein paar Lieder mitteilen,
                die Eure Beine locker werden lassen 💃
             </p>
@@ -124,6 +111,62 @@
           </div>
       </section>
       <section class="section--white">
+        <div class="gallery">
+          <picture class="gallery__picture gallery__picture--span-4">
+            <source srcset="img/hugging-800w.webp"
+                    type="image/webp">
+            <img src="img/hugging-800w.jpg" 
+                 alt="Eine Umarmung">
+          </picture>
+          <picture class="gallery__picture gallery__picture--span-4">
+            <source srcset="img/straw-800w.webp"
+                    type="image/webp">
+            <img src="img/straw-800w.jpg" 
+                 alt="Ein Halm">
+          </picture>
+          <picture class="gallery__picture gallery__picture--span-4">
+            <source srcset="img/sunset-800w.webp"
+                    type="image/webp">
+            <img src="img/sunset-800w.jpg" 
+                 alt="Ein Sonnenuntergang">
+          </picture>
+          <picture class="gallery__picture gallery__picture--span-6">
+            <source srcset="img/vietnam-800w.webp"
+                    type="image/webp">
+            <img src="img/vietnam-800w.jpg" 
+                 alt="Ein Steg">
+          </picture>
+          <picture class="gallery__picture gallery__picture--span-6">
+            <source srcset="img/snowfly-800w.webp"
+                    type="image/webp">
+            <img src="img/snowfly-800w.jpg" 
+                 alt="Schnee">
+          </picture>
+          <picture class="gallery__picture gallery__picture--span-12">
+            <source media="(max-width: 800px)"
+                    srcset="img/horseshoe_bend-800w.webp"
+                    type="image/webp">
+            <source media="(min-width: 801px)"
+                    srcset="img/horseshoe_bend-1200w.webp"
+                    type="image/webp">
+            <img src="img/horseshoe_bend-1200w.jpg" 
+                 alt="Ein Fluss">
+          </picture>
+          <picture class="gallery__picture gallery__picture--span-6">
+            <source srcset="img/santamonica-800w.webp"
+                    type="image/webp">
+            <img src="img/santamonica-800w.jpg" 
+                 alt="Ein Pier">
+          </picture>
+          <picture class="gallery__picture gallery__picture--span-6">
+            <source srcset="img/flower-800w.webp"
+                    type="image/webp">
+            <img src="img/flower-800w.jpg" 
+                 alt="Eine Blume">
+          </picture>
+        </div>
+      </section>
+      <section class="section--white">
           <h2>
               <a href="https://www.acantus-hotel.de/">
                   Acantus Hotel & Restaurant
@@ -134,9 +177,9 @@
               91085 Weisendorf-Oberlindach<br>
               09135 211 66 0
           </address>
-            <div class="card card--turquoise">
+          <!-- <div class="card card--turquoise">
             <iframe title="ACANTUS Hotel & Restaurant" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.0701748834376!2d10.817701515701971!3d49.63413197937108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a20457b7572447%3A0x70369e61ed3afd7!2sACANTUS%20Hotel%20%26%20Restaurant!5e0!3m2!1sde!2sde!4v1582392576387!5m2!1sde!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
+          </div> -->
       </section>
       <section class="schedule top-wave top-wave--white bottom-wave bottom-wave--purple">
         <div class="column-layout">
