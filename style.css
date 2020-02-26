@@ -94,6 +94,56 @@ address {
     text-align: center;
 }
 
+.elevator-mask {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 5rem;
+    height: 2rem;
+}
+
+.elevator {
+    animation: items 8s linear infinite;
+}
+
+@keyframes items {
+    0% {transform: translateY(-16rem);}
+    2.5% {transform: translateY(-14rem);}
+    22.5% {transform: translateY(-14rem);}
+    27.5% {transform: translateY(-10rem);}
+    47.5% {transform: translateY(-10rem);}
+    52.5% {transform: translateY(-6rem);}
+    72.5% {transform: translateY(-6rem);}
+    77.5% {transform: translateY(-2rem);}
+    97.5% {transform: translateY(-2rem);}
+    100%{transform: translateY(-0rem)}
+}
+
+.elevator__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 2rem;
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+.elevator__item--feiern {
+    background: #e31c9d;
+}
+
+.elevator__item--singen {
+    background: #1e0e31;
+}
+
+.elevator__item--tanzen {
+    background: #1ce3e3;
+}
+
+.elevator__item--lachen {
+    background: #ffe44e;
+}
+
 .card {
     max-width: 300px;
     margin: 0 auto 3rem;
