@@ -25,11 +25,6 @@ const countdownFun = () => {
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
     const seconds = Math.floor((difference / 1000) % 60);
 
-    console.log('days =', days);
-    console.log('hours =', hours);
-    console.log('minutes =', minutes);
-    console.log('seconds =', seconds);
-
     countdownDays.innerText = days;
     countdownHours.innerText = hours;
     countdownMinutes.innerText = minutes;
