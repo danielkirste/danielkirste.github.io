@@ -156,6 +156,10 @@ address {
     width: 100%;
 }
 
+.section-content {
+    margin: 9vw auto;
+}
+
 .gallery {
     max-width: 1200px;
     margin: 4.5vw auto;
@@ -287,7 +291,6 @@ svg {
 
 .svg-container {
     max-width: 615px;
-    margin: 0 auto;
 }
 
 .hero {
