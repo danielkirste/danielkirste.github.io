@@ -88,7 +88,7 @@ address {
 }
 
 .elevator {
-    /* transform: translateY(-16rem); */
+    transform: translate3d(0, -16rem, 0);
     animation: elevate 8s infinite;
     /* -webkit-animation: elevate 8s infinite; */
 }
@@ -103,7 +103,7 @@ address {
     72.5% {transform: translate3d(0, -6rem, 0);}
     77.5% {transform: translate3d(0, -2rem, 0);}
     97.5% {transform: translate3d(0, -2rem, 0);}
-    100%{transform:   translate3d(0, -0rem, 0);}
+    100% {transform:   translate3d(0, -0rem, 0);}
 }
 
 /* @-webkit-keyframes elevate {
