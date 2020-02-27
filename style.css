@@ -87,16 +87,6 @@ address {
     height: 2rem;
 }
 
-.elevator {
-    /* transform: translateY(-16rem); */
-    /* animation: items 8s linear infinite; */
-    /* -webkit-animation: items 8s linear infinite; */
-    animation-name: elevate;
-    animation-duration: 8s;
-    animation-direction: linear;
-    animation-iteration-count: infinite;
-}
-
 @keyframes elevate {
     0% {transform: translateY(-16rem);}
     2.5% {transform: translateY(-14rem);}
@@ -121,6 +111,15 @@ address {
     77.5% {transform: translateY(-2rem);}
     97.5% {transform: translateY(-2rem);}
     100%{transform: translateY(-0rem);}
+}
+
+.elevator {
+    /* transform: translateY(-16rem); */
+    /* animation: items 8s linear infinite; */
+    /* -webkit-animation: items 8s linear infinite; */
+    animation-name: elevate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 .elevator__item {
