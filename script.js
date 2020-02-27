@@ -1,12 +1,15 @@
 /** countdown */
 const thisDate = new Date();
 const thisOffset = thisDate.getTimezoneOffset();
+console.log('thisOffset =', thisOffset);
 
 const targetDate = new Date("2020-05-08 14:00:00");
 const targetOffset = targetDate.getTimezoneOffset();
+console.log('targetOffset =', targetOffset);
 
 const offset = targetOffset + -thisOffset;
 const offsetInMS = offset * 60 * 1000;
+console.log('offsetInMS =', offsetInMS);
 
 const countdownDays = document.querySelector(".countdown__item--days");
 const countdownHours = document.querySelector(".countdown__item--hours");
@@ -15,11 +18,17 @@ const countdownSeconds = document.querySelector(".countdown__item--seconds");
 
 const countdownFun = () => {
     const difference = +targetDate - +new Date() + -offsetInMS;
+    console.log('difference=', difference);
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24 );
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
     const seconds = Math.floor((difference / 1000) % 60);
+
+    console.log('days =', days);
+    console.log('hours =', hours);
+    console.log('minutes =', minutes);
+    console.log('seconds =', seconds);
 
     countdownDays.innerText = days;
     countdownHours.innerText = hours;
