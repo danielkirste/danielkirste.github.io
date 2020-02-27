@@ -2,7 +2,8 @@
 const thisDate = new Date();
 const thisOffset = thisDate.getTimezoneOffset();
 
-const targetDate = new Date("2020-05-08T14:00:00");
+const targetDate = new Date(Date.UTC(2020, 4, 8, 14));
+
 const targetOffset = targetDate.getTimezoneOffset();
 
 const offset = -targetOffset + thisOffset;
@@ -14,8 +15,8 @@ const countdownMinutes = document.querySelector(".countdown__item--minutes");
 const countdownSeconds = document.querySelector(".countdown__item--seconds");
 
 const countdownFun = () => {
-    const difference = +targetDate - +new Date() + offsetInMS;
-    
+    const difference = +targetDate - +new Date() - offsetInMS;
+
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24 );
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
