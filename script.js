@@ -18,8 +18,7 @@ const countdownSeconds = document.querySelector(".countdown__item--seconds");
 
 const countdownFun = () => {
     const difference = +targetDate - +new Date() + -offsetInMS;
-    console.log('difference=', difference);
-
+    
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24 );
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
