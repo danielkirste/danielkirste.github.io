@@ -11,6 +11,10 @@ body {
     font-family: 'Lobster Two', Arial;
 }
 
+address {
+    margin-bottom: 1rem;
+}
+
 footer {
     height: 25vh;
     display: flex;
@@ -38,9 +42,6 @@ h1, h2 {
     text-align: center;
 }
 
-address {
-    margin-bottom: 1rem;
-}
 
 .section--white {
     background: #ffffff;
@@ -89,9 +90,23 @@ address {
 .elevator {
     transform: translateY(-16rem);
     animation: items 8s linear infinite;
+    -webkit-animation: items 8s linear infinite;
 }
 
 @keyframes items {
+    0% {transform: translateY(-16rem);}
+    2.5% {transform: translateY(-14rem);}
+    22.5% {transform: translateY(-14rem);}
+    27.5% {transform: translateY(-10rem);}
+    47.5% {transform: translateY(-10rem);}
+    52.5% {transform: translateY(-6rem);}
+    72.5% {transform: translateY(-6rem);}
+    77.5% {transform: translateY(-2rem);}
+    97.5% {transform: translateY(-2rem);}
+    100%{transform: translateY(-0rem);}
+}
+
+@-webkit-keyframes items {
     0% {transform: translateY(-16rem);}
     2.5% {transform: translateY(-14rem);}
     22.5% {transform: translateY(-14rem);}
