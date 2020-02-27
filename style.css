@@ -88,11 +88,16 @@ address {
 }
 
 .elevator {
-    animation: items 8s linear infinite;
-    -webkit-animation: items 8s linear infinite;
+    /* transform: translateY(-16rem); */
+    /* animation: items 8s linear infinite; */
+    /* -webkit-animation: items 8s linear infinite; */
+    animation-name: elevate;
+    animation-duration: 8s;
+    animation-direction: linear;
+    animation-iteration-count: infinite;
 }
 
-@keyframes items {
+@keyframes elevate {
     0% {transform: translateY(-16rem);}
     2.5% {transform: translateY(-14rem);}
     22.5% {transform: translateY(-14rem);}
@@ -105,7 +110,7 @@ address {
     100%{transform: translateY(-0rem);}
 }
 
-@-webkit-keyframes items {
+@-webkit-keyframes elevate {
     0% {transform: translateY(-16rem);}
     2.5% {transform: translateY(-14rem);}
     22.5% {transform: translateY(-14rem);}
