@@ -3,7 +3,7 @@ const thisDate = new Date();
 const thisOffset = thisDate.getTimezoneOffset();
 console.log('thisOffset =', thisOffset);
 
-const targetDate = new Date("2020-05-08 14:00:00");
+const targetDate = new Date("2020-05-08T14:00:00");
 const targetOffset = targetDate.getTimezoneOffset();
 console.log('targetOffset =', targetOffset);
 
