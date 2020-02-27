@@ -88,7 +88,7 @@ address {
 }
 
 .elevator {
-    transform: translateY(-16rem);
+/*     transform: translateY(-16rem); */
     animation: items 8s linear infinite;
     -webkit-animation: items 8s linear infinite;
 }
