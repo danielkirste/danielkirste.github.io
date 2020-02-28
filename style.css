@@ -172,7 +172,8 @@ address {
     }
     
     .gallery__picture {
-	margin-bottom: 0;    
+	margin-bottom: 0; 
+    }
 	
     .gallery__picture--span-4 {
         grid-column: span 4;
