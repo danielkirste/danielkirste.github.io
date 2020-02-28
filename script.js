@@ -43,6 +43,7 @@ window.addEventListener('scroll', hideArrow);
 
 /** parallax */ 
 const parallax = document.querySelector('.parallax');
+
 const parallaxListener = () => {
     parallax.style.setProperty('--y', `${window.scrollY}px`);
 }
