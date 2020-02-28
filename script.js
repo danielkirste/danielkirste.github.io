@@ -49,8 +49,8 @@ const parallaxListener = () => {
 }
 
 const parallaxObserver = new IntersectionObserver(entries => {
-    let [{isIntersecting}] = entries;
-    const (isIntersecting) {
+    const [{isIntersecting}] = entries;
+    if (isIntersecting) {
         window.addEventListener('scroll', parallaxListener, {capture: false, passive: true});
     } else {
         window.removeEventListener('scroll', parallaxListener, {capture: false, passive: true});
