@@ -33,7 +33,7 @@ setInterval(countdownFun, 1000);
 /** arrow */ 
 const arrow = document.querySelector(".arrow");
 
-let hideArrow = () => {
+const hideArrow = () => {
     arrow.classList.add('hide');
     arrow.classList.remove('arrowanim');
     window.removeEventListener('scroll', hideArrow);
@@ -42,14 +42,14 @@ let hideArrow = () => {
 window.addEventListener('scroll', hideArrow);
 
 /** parallax */ 
+const parallax = document.querySelector('.parallax');
 const parallax = () => {
-    let parallax = document.querySelector('.parallax');
     parallax.style.setProperty('--y', `${window.scrollY}px`);
 }
 
 const parallaxObserver = new IntersectionObserver(entries => {
     let [{isIntersecting}] = entries;
-    if (isIntersecting) {
+    const (isIntersecting) {
         window.addEventListener('scroll', parallax, {capture: false, passive: true});
     } else {
         window.removeEventListener('scroll', parallax, {capture: false, passive: true});
