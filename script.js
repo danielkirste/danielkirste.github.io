@@ -3,7 +3,6 @@ const thisDate = new Date();
 const thisOffset = thisDate.getTimezoneOffset();
 
 const targetDate = new Date(Date.UTC(2020, 4, 8, 14));
-
 const targetOffset = targetDate.getTimezoneOffset();
 
 const offset = -targetOffset + thisOffset;
