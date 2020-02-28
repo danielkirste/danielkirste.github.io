@@ -56,5 +56,5 @@ const parallaxObserver = new IntersectionObserver(entries => {
     }
 });
 
-const paralaxReverence = document.querySelector('.hero');
-parallaxObserver.observe(paralaxReverence);
+const parallaxReverence = document.querySelector('.hero');
+parallaxObserver.observe(parallaxReverence);
