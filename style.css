@@ -170,7 +170,10 @@ address {
         grid-template-rows: auto;
         grid-gap: 1rem;
     }
-
+    
+    .gallery__picture {
+	margin-bottom: 0;    
+	
     .gallery__picture--span-4 {
         grid-column: span 4;
     }
