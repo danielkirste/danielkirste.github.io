@@ -43,16 +43,16 @@ window.addEventListener('scroll', hideArrow);
 
 /** parallax */ 
 const parallax = document.querySelector('.parallax');
-const parallax = () => {
+const parallaxListener = () => {
     parallax.style.setProperty('--y', `${window.scrollY}px`);
 }
 
 const parallaxObserver = new IntersectionObserver(entries => {
     let [{isIntersecting}] = entries;
     const (isIntersecting) {
-        window.addEventListener('scroll', parallax, {capture: false, passive: true});
+        window.addEventListener('scroll', parallaxListener, {capture: false, passive: true});
     } else {
-        window.removeEventListener('scroll', parallax, {capture: false, passive: true});
+        window.removeEventListener('scroll', parallaxListener, {capture: false, passive: true});
     }
 });
 
